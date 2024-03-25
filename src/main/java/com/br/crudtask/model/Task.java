@@ -1,5 +1,7 @@
 package com.br.crudtask.model;
 
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,5 +23,6 @@ public class Task {
     private String title;
     private String description;
     private boolean completed;
+    private Date date;
     
 }

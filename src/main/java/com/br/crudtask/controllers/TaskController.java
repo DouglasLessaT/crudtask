@@ -50,6 +50,7 @@ public class TaskController {
             task.setTitle(updatedTask.getTitle());
             task.setDescription(updatedTask.getDescription());
             task.setCompleted(updatedTask.isCompleted());
+            task.setDate(updatedTask.getDate());
             taskRepository.save(task);
             return ResponseEntity.ok(task);
         } else {
